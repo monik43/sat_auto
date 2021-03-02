@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="sat_auto.list">
+      <field name="name">sat_auto list</field>
+      <field name="model">sat_auto.sat_auto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="sat_auto.action_window">
+      <field name="name">sat_auto window</field>
+      <field name="res_model">sat_auto.sat_auto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="sat_auto.action_server">
+      <field name="name">sat_auto server</field>
+      <field name="model_id" ref="model_sat_auto_sat_auto"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="sat_auto" id="sat_auto.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="sat_auto.menu_1" parent="sat_auto.menu_root"/>
+    <menuitem name="Menu 2" id="sat_auto.menu_2" parent="sat_auto.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="sat_auto.menu_1_list" parent="sat_auto.menu_1"
+              action="sat_auto.action_window"/>
+    <menuitem name="Server to list" id="sat_auto" parent="sat_auto.menu_2"
+              action="sat_auto.action_server"/>
+    -->
+  </data>
+</odoo>
